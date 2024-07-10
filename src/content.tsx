@@ -22,19 +22,30 @@ const Content: React.FC = () => {
 
   // Checking for the text box availability every second
   // Once the text box is found, add the AI icon and stop checking
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      const textBox = document.querySelector<HTMLElement>(
-        ".msg-form__contenteditable"
-      )
-      if (textBox) {
-        textBox.addEventListener("focus", handleFocus)
-        textBox.addEventListener("blur", handleBlur)
-        clearInterval(intervalId) // Stop checking once the class is found
-      }
-    }, 1000) // Check every second
 
-    return () => clearInterval(intervalId) // Clean up on unmount
+  const handleMutation = (
+    mutations: MutationRecord[],
+    observer: MutationObserver
+  ) => {
+    mutations.forEach((mutation) => {
+      if (mutation.addedNodes.length > 0) {
+        const textBox = document.querySelector<HTMLElement>(
+          ".msg-form__contenteditable"
+        )
+        if (textBox) {
+          textBox.addEventListener("focus", handleFocus)
+          textBox.addEventListener("blur", handleBlur)
+          observer.disconnect() // Stop observing once the class is found
+        }
+      }
+    })
+  }
+
+  useEffect(() => {
+    const observer = new MutationObserver(handleMutation)
+    observer.observe(document.body, { childList: true, subtree: true })
+
+    return () => observer.disconnect() // Clean up on unmount
   }, [])
 
   // Handle focus event on the text box to add the AI icon
