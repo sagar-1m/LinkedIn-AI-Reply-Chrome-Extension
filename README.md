@@ -6,7 +6,8 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 # Demo Video
 
-<iframe src="https://drive.google.com/file/d/17tiSnm2odiqgZwWlpAdHVVCNtodjd9qi/preview" width="640" height="480"></iframe>
+https://github.com/sagar-1m/LinkedIn-AI-Reply-Chrome-Extension/assets/113180099/030b532d-0c3a-400c-b3d7-137b3ca5ee7c
+
 
 ## Getting Started
 
