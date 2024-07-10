@@ -6,10 +6,9 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 # Demo Video
 
-<video width="600" controls>
-  <source src="assets/Demo Video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+```markdown
+![Demo Video](assets/Demo Video.mp4)
+```
 
 ## Getting Started
 
