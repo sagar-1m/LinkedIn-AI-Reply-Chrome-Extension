@@ -6,9 +6,7 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 # Demo Video
 
-```markdown
-[![Demo Video](assets/Demo Video.mp4)](https://drive.google.com/file/d/17tiSnm2odiqgZwWlpAdHVVCNtodjd9qi/[preview?usp=drive_link)
-```
+(<iframe src="https://drive.google.com/file/d/17tiSnm2odiqgZwWlpAdHVVCNtodjd9qi/preview" width="640" height="480"></iframe>)
 
 ## Getting Started
 
