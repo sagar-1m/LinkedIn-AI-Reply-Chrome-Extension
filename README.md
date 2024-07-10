@@ -7,7 +7,7 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 # Demo Video
 
 ```markdown
-[![Demo Video](assets/Demo Video.mp4)](https://drive.google.com/file/d/17tiSnm2odiqgZwWlpAdHVVCNtodjd9qi/view?usp=drive_link)
+[![Demo Video](assets/Demo Video.mp4)](https://drive.google.com/file/d/17tiSnm2odiqgZwWlpAdHVVCNtodjd9qi/[preview?usp=drive_link)
 ```
 
 ## Getting Started
